@@ -48,7 +48,7 @@ class TestSuiteStress:
     @pytest.fixture()
     def teardown(self, infra: Infra, TFL: TFL):
         """
-        a fixture for executing teardown/cleanup operation after a test
+        a fixture for executing teardown/cleanup operation after a test.
         :param infra: a fixture for exposing all infra/framework functionality
         :param TFL: a fixture to expose all tests steps embedded in the TFL layer
         :return: None
