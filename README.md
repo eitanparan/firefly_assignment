@@ -88,5 +88,26 @@ D. Functional:
 D. Stress:
 
 - 1. Execute 1000 parallel get calls and validate it is not exceeding a 1 minute timeout
+  2. Execute 1000 parallel post calls and validate it is not exceeding a 1 minute timeout
+  3. Execute 1000 parallel put calls and validate it is not exceeding a 1 minute timeout
+  4. Execute 1000 parallel delete calls and validate it is not exceeding a 1 minute timeout
+  5. Execute 1000 parallel patch calls and validate it is not exceeding a 1 minute timeout
+  6. reach system overload by incrementally adding all possible elements. check overload point is meeting the KPIs
 
+E. Performance:
 
+- 1. Measure time for executing get command, make sure it meets KPIs
+- 2. Measure time for executing post command, make sure it meets KPIs
+- 3. Measure time for executing put command, make sure it meets KPIs
+- 4. Measure time for executing delete command, make sure it meets KPIs
+- 5. Measure time for executing patch command, make sure it meets KPIs
+- 6. Measure Performance during load. In the background run high load on the system, and measure each rest time 
+
+F. Endurance:
+
+- 1. Reach critical point by overloading the system, then reduce 10%, run load in background for 5 hours. check stability
+- 2. Load the system with repeating calls (write and delete), reach ~90% load. run for 5 hours, check stability
+
+G. Peak:
+
+- 1. iterate with load to find critical point. the repeatedly shock the system with critical point for N times.check stability
