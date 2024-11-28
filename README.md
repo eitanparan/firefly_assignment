@@ -88,11 +88,11 @@ D. Functional:
 D. Stress:
 
 - 1. Execute 1000 parallel get calls and validate it is not exceeding a 1 minute timeout
-  2. Execute 1000 parallel post calls and validate it is not exceeding a 1 minute timeout
-  3. Execute 1000 parallel put calls and validate it is not exceeding a 1 minute timeout
-  4. Execute 1000 parallel delete calls and validate it is not exceeding a 1 minute timeout
-  5. Execute 1000 parallel patch calls and validate it is not exceeding a 1 minute timeout
-  6. reach system overload by incrementally adding all possible elements. check overload point is meeting the KPIs
+- 2. Execute 1000 parallel post calls and validate it is not exceeding a 1 minute timeout
+- 3. Execute 1000 parallel put calls and validate it is not exceeding a 1 minute timeout
+- 4. Execute 1000 parallel delete calls and validate it is not exceeding a 1 minute timeout
+- 5. Execute 1000 parallel patch calls and validate it is not exceeding a 1 minute timeout
+- 6. reach system overload by incrementally adding all possible elements. check overload point is meeting the KPIs
 
 E. Performance:
 
